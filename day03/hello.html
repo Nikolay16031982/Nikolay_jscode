@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <meta charset="utf-8" />
+  <script>
+  
+	alert( "Я JavaScript!" );
+
+  </script> 
+  
+  <script src="alert.js" > </script>
+   
+   <script>
+   
+	let  admin, name;
+	name = "Джон";
+	admin = name;
+	alert( admin );
+
+  </script> 
+    
+   <script>
+  
+	let  admin, name;
+	name = "Джон";
+	admin = name;
+	alert( admin );
+
+ </script> 
+ 
+ <script>
+  
+	let PlanetName;
+	let CurrentUser;
+	
+	const BIRTHDAY = '18.04.1982'; // целесообразно
+
+    const AGE = someCode(BIRTHDAY); // нет
+
+ </script>
+ 
+ <script>
+ 
+	let name = "Ilya";
+	alert( `hello ${1}` ); // hello 1
+	alert( `hello ${"name"}` ); // hello "name" 
+	alert( `hello ${name}` ); // hello Ilya
+	
+ </script>
+ 
+ <script>
+	"" + 1 + 0 // "10" 
+	"" - 1 + 0 // -1 
+	true + false // 1
+	6 / "3" // 2
+	"2" * "3" // 6
+	4 + 5 + "px" // "9px"
+	"$" + 4 + 5 // "$45"
+	"4" - 2 // 2
+	"4px" - 2 // NaN
+	7 / 0 // Infinity
+	" -9  " + 5 // " -9  5" 
+	" -9  " - 5 // -14 
+	null + 1 // 1 
+	undefined + 1 // NaN 
+	" \t \n" - 2 // -2 
+ </script>
+ 
+ <script>
+ // на С++ знаю, на js еще не доучил, но что-то попробовал. на C++ смог бы сделать что-то типа STL Vector
+ class Todo {
+
+  constructor() {
+  id = 0;  
+  }
+	let arr = [];
+	let N;
+	addTodo(newTodo) {
+    arr[N]=newTodo;
+	++id;
+  }
+  
+  removeTodo(todoId){
+  if(todoId>N) return;
+  for( let i = todoId-1; i<N-1; ++i)// считаем элементы массива с 1
+  arr[i] =  arr[i + 1];
+  --N;  
+  }
+}
+
+ </script>
+ 
+ 
+</body>
+
+</html>
