@@ -1,6 +1,15 @@
 
 const todoArray = [];//массив для хранения объектов todo
 const N_todo=10;//Размер массива объектов todo
+
+//добавление объекта todo в массив todoArray
+function addTodo(newTodo) {
+
+    //метод .push() вставляет объект todo в конец массива todoArr
+    todoArray.push(newTodo);
+    //return todoArray;
+};
+
 // массив из 10-ти объектов todo
 for (let i = 0; i < 10; i++) {
     //объект todo со свойствами id, title, text, complete
@@ -68,13 +77,7 @@ function getIndexTodo(todoId) {
     return indexTodo;
 }
 
-//добавление объекта todo в массив todoArray
-function addTodo(newTodo) {
 
-    //метод .push() вставляет объект todo в конец массива todoArr
-    todoArray.push(newTodo);
-    //return todoArray;
-};
 
 //удаление объекта todo по его id из массива todoArray
 function removeTodo(todoId) {
